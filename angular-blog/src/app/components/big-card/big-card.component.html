@@ -1,23 +1,15 @@
 <div class="container__big_card">
   <div class="photo__big_card">
-    <img
-      src="https://br.web.img3.acsta.net/r_654_368/newsv7/19/04/25/10/53/2063169.jpg"
-      alt=""
-      height="200px"
-      srcset=""
-    />
+    <img src="{{ photoBig }}" alt="" height="200px" srcset="" />
   </div>
   <div class="title__big_card">
-    <h1><a href="#">Saiu a nova versão do Angular Bash!</a></h1>
+    <h1>
+      <a [routerLink]="['content', Id]">{{ cardTitle }}</a>
+    </h1>
   </div>
   <div class="text__big_card">
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae
-      sapien congue, varius quam et, tempor lectus. Praesent sodales diam quis
-      magna vestibulum, a finibus leo imperdiet. Aenean vehicula turpis in nisl
-      egestas, eu vestibulum nunc vehicula. Curabitur blandit dolor ac justo
-      facilisis dignissim vitae a ex. Mauris vel fringilla mauris, vitae laoreet
-      lorem. Nam semper mauris venenatis auctor ullamcorper.
+      {{ cardText }}
     </p>
   </div>
 </div>

@@ -6,11 +6,3 @@
   justify-content: center;
 }
 
-header {
-  /* border: solid 2px white; */
-  margin-top: 15px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
